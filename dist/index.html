@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/画板.aee811dd.css">
+<script src="/画板.aee811dd.js"></script></head>
+<body>
+    <canvas id="canvas" width="210px" height="210px"></canvas>
+    <script>var canvas = document.getElementById("canvas");
+canvas.width = document.documentElement.clientWidth;
+canvas.height = document.documentElement.clientHeight;
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "black";
+ctx.strokeStyle = 'none';
+var painting = false;
+
+canvas.onmousedown = function () {
+  painting = true;
+};
+
+canvas.onmousemove = function (e) {
+  if (painting === true) {
+    ctx.beginPath();
+    ctx.arc(e.clientX, e.clientY, 10, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fill(); // ctx.fillRect(e.clientX - 5, e.clientY -5,10,10)
+  } else {
+    console.log("干啥");
+  }
+};
+
+canvas.onmouseup = function () {
+  painting = false;
+};</script>
+</body>
+</html>
