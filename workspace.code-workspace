@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\study-01"
+		},
+		{
+			"path": "..\\彩虹练习"
+		},
+		{
+			"path": "..\\盒模型"
+		},
+		{
+			"path": "..\\定位"
+		},
+		{
+			"path": "..\\动画"
+		},
+		{
+			"path": "..\\http"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "画板练习"
+	}
+}
